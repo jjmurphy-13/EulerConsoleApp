@@ -14,17 +14,23 @@ class Program
         Console.WriteLine(str2 + " => " + NoBufferReverse(str2.ToCharArray()));
         Console.WriteLine(str3 + " => " + NoBufferReverse(str3.ToCharArray()));
         Console.WriteLine(new string(str4) + " => " + NoBufferReverse(str4));
-
         Console.WriteLine();
+
+        //  This section performs multiplication without using the * operator
+        //  or loops.  Instead it uses bitshifting and addition.  It also breaks
+        //  down the multiplier into its constituent bit mask to be able to 
+        //  correctly bit-shift to do the math.
         BitMulti bm = new BitMulti();
-        Console.WriteLine("10 * 321 = " + bm.Multiply(10, 321));
-        Console.WriteLine("10 * 322 = " + bm.Multiply(10, 322));
-        Console.WriteLine("10 * 323 = " + bm.Multiply(10, 323));
-        Console.WriteLine("10 * 324 = " + bm.Multiply(10, 324));
-        Console.WriteLine("10 * 325 = " + bm.Multiply(10, 325));
-        Console.WriteLine("10 * 326 = " + bm.Multiply(10, 326));
-        Console.WriteLine("10 * 327 = " + bm.Multiply(10, 327));
-        Console.WriteLine("10 * 328 = " + bm.Multiply(10, 328));
+        Console.WriteLine("11 * 321 = " + bm.Multiply(11, 321));
+        /* */
+        Console.WriteLine("11 * 322 = " + bm.Multiply(11, 322));
+        Console.WriteLine("11 * 323 = " + bm.Multiply(11, 323));
+        Console.WriteLine("11 * 324 = " + bm.Multiply(11, 324));
+        Console.WriteLine("11 * 325 = " + bm.Multiply(11, 325));
+        Console.WriteLine("11 * 326 = " + bm.Multiply(11, 326));
+        Console.WriteLine("11 * 327 = " + bm.Multiply(11, 327));
+        Console.WriteLine("11 * 328 = " + bm.Multiply(11, 328));
+        /* */
     }
 
     static string NoBufferReverse(char[] s)
